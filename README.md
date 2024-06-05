@@ -1,5 +1,5 @@
-# Página web oficial de webdesign.cl
+# Portafolio WEB
 
-Creada para el uso de esta como negocio personal
+Portafolio personal en ASTRO y TAILWINDCSS
 
 **...PAGINA EN DESARROLLO...**

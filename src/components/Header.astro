@@ -1,12 +1,14 @@
 ---
+import GithubIcons from "./icons/GithubIcons.astro";
+import InstagramIcon from "./icons/InstagramIcon.astro";
+import WhatsappIcon from "./icons/WhatsappIcon.astro";
+import MyLogo from "./icons/MyLogo.astro"
 ---
 
 <!--#f44b5a -->
 <header class="flex justify-between items-center max-w-4xl mx-auto bg-[#1E1E1E] px-8 py-2 mt-3 rounded-xl">
     <div class="flex items-center">
-        <h2 class="font-bold text-3xl flex gap-2">
-            <img src="/src/components/icons/rocket.svg" alt="">Rena
-        </h2>
+        <MyLogo/>
         <nav class="flex gap-7 pl-16 font-medium">
             <a href="#proyectos">Proyectos</a>
             <a href="#inicio">Inicio</a>
@@ -16,8 +18,14 @@
     </div>
 
     <div class="flex">
-        <a href=""><img src="/src/components/icons/igicon.svg" alt=""></a>
-        <a href=""><img src="/src/components/icons/wsicon.svg" alt=""></a>
-        <a href=""><img src="/src/components/icons/githubicon.svg" alt=""></a>
+        <a href="">
+            <InstagramIcon/>
+        </a>
+        <a href="">
+            <GithubIcons/>
+        </a>
+        <a href="">
+            <WhatsappIcon/>
+        </a>
     </div>
 </header>

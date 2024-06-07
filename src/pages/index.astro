@@ -1,15 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Bento from '../components/Bento.astro';
+import FacebookIcon from '../components/icons/FacebookIcon.astro';
+import GithubIcon from '../components/icons/GithubIcon.astro';
+import DownloadIcon from '../components/icons/DownloadIcon.astro';
 ---
 
 <Layout title="webdesign.cl | ¡Diseños de páginas web increibles!">
-	<Header/>
+	<!--#f44b5a text-[#CBA5EB]-->
+	<main class="max-w-screen-lg mx-auto">
+		<section class="flex flex-col pt-36">
+			<span id="write-machine" class="text-2xl text-green-500">&lt;p&gt;¡Bienvenido usuario!&lt;/p&gt;</span>
+			<h2 class="text-6xl font-semibold pb-2 pt-2">Hola, soy <span class="text-[#f44b5a]">Renato Herrera</span></h2>
+			<h3 class="text-4xl font-bold">Desarrollador <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-800">Frontend</span></h3>
+			<p class="pt-1 font-light">
+				Cuento con 2 años de experiencia en desarrollo web frontend, manejando tecnologías como HTML, CSS, TailwindCSS y Astro. <br>
+				experto en la creacion de <span class="text-violet-300">diseños sensacionales</span> y atractivos al cliente, plasmando ideas en una <span class="text-yellow-500">majestuosa página web</span>.
+			</p>
+			
+			<div class="redes">
+				<button class="bg-[#f44b5a] py-2 px-4 flex font-semibold gap-1 rounded-xl mt-5">
+					<DownloadIcon/>
+					Descargar CV
+				</button>
+			</div>
+		</section>
 
-	<main class="max-w-4xl mx-auto">
+		<!-- SECCION DE PRROYECTOS -->
 		<section>
-			<h2>Hola, soy Renato Herrera</h2>
-			<h3>Desarrollador Frontend/Backend</h3>
+			<h2>Proyectos</h2>	
+			<Bento/>
 		</section>
 	</main>
 </Layout>
@@ -17,5 +37,24 @@ import Header from '../components/Header.astro';
 <style>
 	body {
   		font-family: 'Onest Variable', sans-serif;
+	}
+
+	#write-machine{
+		display: block;
+		font-family: monospace;
+		white-space: nowrap;
+		border-right: 4px solid;
+		width: 28ch;
+
+		animation: typing 2s steps(23), blink .5s infinite step-end alternate;
+		overflow: hidden;
+	}
+
+	@keyframes typing{
+		from { width: 0 }
+	}
+
+	@keyframes blink{
+		50% { border-color: transparent }
 	}
 </style>

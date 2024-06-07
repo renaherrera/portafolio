@@ -1,31 +1,33 @@
 ---
-import GithubIcons from "./icons/GithubIcons.astro";
+import GithubHeader from "./icons/GithubHeader.astro";
 import InstagramIcon from "./icons/InstagramIcon.astro";
 import WhatsappIcon from "./icons/WhatsappIcon.astro";
 import MyLogo from "./icons/MyLogo.astro"
 ---
 
 <!--#f44b5a -->
-<header class="flex justify-between items-center max-w-4xl mx-auto bg-[#1E1E1E] px-8 py-2 mt-3 rounded-xl">
-    <div class="flex items-center">
-        <MyLogo/>
-        <nav class="flex gap-7 pl-16 font-medium">
-            <a href="#proyectos">Proyectos</a>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#tecnologias">Tecnologias</a>
-        </nav>
-    </div>
-
-    <div class="flex">
-        <a href="">
-            <InstagramIcon/>
-        </a>
-        <a href="">
-            <GithubIcons/>
-        </a>
-        <a href="">
-            <WhatsappIcon/>
-        </a>
+<header class="flex w-full justify-center">
+    <div class="flex justify-between items-center max-w-screen-lg mx-auto w-full bg-[#1E1E1E] px-8 py-2 mt-3 rounded-xl fixed">
+        <div class="flex items-center">
+            <MyLogo/>
+            <nav class="flex gap-7 pl-16 font-medium">
+                <a href="#proyectos">Proyectos</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobremi">Sobre mi</a>
+                <a href="#tecnologias">Tecnologias</a>
+            </nav>
+        </div>
+    
+        <div class="flex gap-2">
+            <a href="">
+                <InstagramIcon class=""/>
+            </a>
+            <a href="">
+                <GithubHeader/>
+            </a>
+            <a href="">
+                <WhatsappIcon/>
+            </a>
+        </div>
     </div>
 </header>

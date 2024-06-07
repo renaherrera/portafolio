@@ -1,0 +1,15 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section 
+    class={`
+    w-full max-w-screen-lg
+    grid grid-cols-10 auto-rows-[25rem] gap-4
+    mx-auto
+    `}>
+    <BentoItem class="col-span-10 md:col-span-4" title="Example" subtitle="ASA"/>
+    <BentoItem class="col-span-10 md:col-span-6" title="designweb.cl: Emprendimiento de diseños web." subtitle="30 de mayo de 2024"/>
+    <BentoItem class="col-span-10 md:col-span-6" title="Example" subtitle="ASA"/>
+    <BentoItem class="col-span-10 md:col-span-4" title="Example" subtitle="ASA"/>
+</section>
